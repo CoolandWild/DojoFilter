@@ -12,6 +12,6 @@ Array.prototype.myFilter = function(predicate) {
 
 }
 
-result = words.myFilter(word => word.length > 6)
+result = words.myFilter(word => word.includes("x")).myFilter(word => word.length > 6 )
 console.log(result);
 // résultat attendu : ['exuberant', 'destruction', 'present']
